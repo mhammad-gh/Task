@@ -1,0 +1,546 @@
+{
+	"info": {
+		"_postman_id": "6ed1aae6-dda9-4fc7-8ca9-54b9d526415f",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "First_Name",
+											"value": "mohammad",
+											"type": "default"
+										},
+										{
+											"key": "Last_Name",
+											"value": "ghazal",
+											"type": "default"
+										},
+										{
+											"key": "Email",
+											"value": "0994719146",
+											"type": "default"
+										},
+										{
+											"key": "Password",
+											"value": "12312312\n",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "0994719146",
+											"type": "default"
+										},
+										{
+											"key": "password",
+											"value": "12312312",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET_Users",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY2ODgxNzQ0MCwiZXhwIjoxNjY4ODIxMDQwLCJuYmYiOjE2Njg4MTc0NDAsImp0aSI6ImlwTHlOTTJLa1FINk1EaVYiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.OEgfKAussqMJP_DS1HD_4h00Gh5CkqLAvN2JBnM-gKI",
+										"type": "default"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/getUser/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getUser",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create_User",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY2ODgxODEyMiwiZXhwIjoxNjY4ODIxNzIyLCJuYmYiOjE2Njg4MTgxMjIsImp0aSI6IjVSZkhaUVJ3WkZNMzZQam4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.m3mCALwtT-4dyQ2bSuCD2MLfmjMdUG77FiNKiC2flXs",
+										"type": "default"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "First_Name",
+											"value": "ahmad",
+											"type": "default"
+										},
+										{
+											"key": "Last_Name",
+											"value": "dmcdmc",
+											"type": "default"
+										},
+										{
+											"key": "Email",
+											"value": "sss@gmail.com",
+											"type": "default"
+										},
+										{
+											"key": "Password",
+											"value": "12312312",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/create",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update_user",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY2ODgxMDQ2OSwiZXhwIjoxNjY4ODE0MDY5LCJuYmYiOjE2Njg4MTA0NjksImp0aSI6IktSUlNEajQ3UFoxdnBKa2EiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.SVk2okh0O0xEAdIosRPsd_wqA9lBk3pOGyD59ilF1fM",
+										"type": "default"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "First_Name",
+											"value": "mmmm",
+											"type": "default"
+										},
+										{
+											"key": "Last_Name",
+											"value": "mmm",
+											"type": "default"
+										},
+										{
+											"key": "Email",
+											"value": "m@gmail.com",
+											"type": "default"
+										},
+										{
+											"key": "Password",
+											"value": "12312312",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/update/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User_Profile",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY2ODgxMDQ2OSwiZXhwIjoxNjY4ODE0MDY5LCJuYmYiOjE2Njg4MTA0NjksImp0aSI6IktSUlNEajQ3UFoxdnBKa2EiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.SVk2okh0O0xEAdIosRPsd_wqA9lBk3pOGyD59ilF1fM",
+										"type": "default"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "2",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user_profile/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user_profile",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete_User",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY2ODgxNTkwNSwiZXhwIjoxNjY4ODE5NTA1LCJuYmYiOjE2Njg4MTU5MDUsImp0aSI6ImJ1MDRMU3g4YjM0MFpxY3QiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KqDoRiji-dYiTArRe2iSKvQM2YCPpEo1yQ-pnboT6vM",
+										"type": "default"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/delete/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"delete",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "View_Products",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY2ODgyMTEwMiwiZXhwIjoxNjY4ODI0NzAyLCJuYmYiOjE2Njg4MjExMDIsImp0aSI6IkNUWFI1Z3dJYW1FcEJtSDEiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.WMuOSjIRaK0B1h2e3nPLgCp0LY7XzlI-G3a827vyYgM",
+										"type": "default"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/product",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create_Product",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY2ODgyMTEwMiwiZXhwIjoxNjY4ODI0NzAyLCJuYmYiOjE2Njg4MjExMDIsImp0aSI6IkNUWFI1Z3dJYW1FcEJtSDEiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.WMuOSjIRaK0B1h2e3nPLgCp0LY7XzlI-G3a827vyYgM",
+										"type": "default"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "Name",
+											"value": "pro1",
+											"type": "default"
+										},
+										{
+											"key": "Image",
+											"type": "file",
+											"src": "/C:/Users/lenovo/Desktop/photo/03-64.jpg"
+										},
+										{
+											"key": "Description",
+											"value": "ImageImage",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/product",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Assign_Product",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY2ODgxODEyMiwiZXhwIjoxNjY4ODIxNzIyLCJuYmYiOjE2Njg4MTgxMjIsImp0aSI6IjVSZkhaUVJ3WkZNMzZQam4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.m3mCALwtT-4dyQ2bSuCD2MLfmjMdUG77FiNKiC2flXs",
+										"type": "default"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "9",
+											"type": "default"
+										},
+										{
+											"key": "customer_id",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/assign",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"assign"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete_Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY2ODgyMTEwMiwiZXhwIjoxNjY4ODI0NzAyLCJuYmYiOjE2Njg4MjExMDIsImp0aSI6IkNUWFI1Z3dJYW1FcEJtSDEiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.WMuOSjIRaK0B1h2e3nPLgCp0LY7XzlI-G3a827vyYgM",
+										"type": "default"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/destroy/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"destroy",
+										"1"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "View_Products",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
